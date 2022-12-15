@@ -12,7 +12,7 @@ The Work Day Scheduler is a simple calendar application that allows you to save 
 
 The application works in your browser and does not require installation.
 
-// To do - insert link
+[Work Day Scheduler](https://wolldog.github.io/work-day-scheduler/)
  
 ## Usage
 
