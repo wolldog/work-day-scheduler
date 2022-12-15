@@ -2,6 +2,10 @@
 
 //current date/time executes dayjs API
 var today = dayjs();
+//current hour as integer
+var timeNow = dayjs().hour();
+//identifies parent div for each time-block
+var hourDiv = $('.row.time-block');
 
 
 //Document ready function to call jQuery once all elements have been rendered
@@ -39,7 +43,7 @@ $(document).ready (function () {
   }
 
   //Populates <p> element with id #current day with todays date in desired format.
-  $('#currentDay').text(today.format('dddd, MMMM Do'));
+  $('#currentDay').text(today.format('dddd, MMMM D'));
 
 
 });
