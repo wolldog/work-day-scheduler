@@ -40,7 +40,12 @@ $(document).ready (function () {
         else {
           $(hourDiv[i]).addClass('future');
         }
+
+      //Retrives any stored diaryEntry for the div
+      var diaryText = $(hourDiv[i]).children('textarea')
+      diaryText.val(localStorage.getItem(hourId))
   }
+  
 
   //Populates <p> element with id #current day with todays date in desired format.
   $('#currentDay').text(today.format('dddd, MMMM D'));
