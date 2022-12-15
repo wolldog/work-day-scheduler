@@ -1,3 +1,7 @@
+
+
+
+
 # Work Day Scheduler
 
 ## Description
@@ -16,7 +20,8 @@ When you open the application, today's date is displayed at the top of the page.
 
 Click in a time block to enter a note for an event and click save to store that note.
 
-// Enter gif
+![word-day-scheduler1](https://user-images.githubusercontent.com/110208272/207777261-ec6cae35-1844-4380-ab45-935090977dea.gif)
+
 
 ## Credits
 
