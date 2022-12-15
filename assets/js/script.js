@@ -1,10 +1,18 @@
+//Global variables
+
+//current date/time executes dayjs API
+var today = dayjs();
+
+
 //Document ready function to call jQuery once all elements have been rendered
 $(document).ready (function () {
-
-
-
-
   
+
+//Populates <p> element with id #current day with todays date in desired format.
+$('#currentDay').text(today.format('dddd, MMMM Do'));
+
+
+
 });
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
