@@ -11,8 +11,11 @@ $(document).ready (function () {
   $(".btn.saveBtn").click(function() {
     //Assign variable 'thisHour' a value based on parent div #id;
     var thisHour = ($(this).parent().attr('id'));
+    //Assign variable 'diaryEntry' the value of any text in 'textarea'
+    var diaryEntry = ($(this).parent().children('textarea').val());
     
     console.log(thisHour)
+    console.log(diaryEntry)
 
   });
 
