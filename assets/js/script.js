@@ -6,11 +6,18 @@ var today = dayjs();
 
 //Document ready function to call jQuery once all elements have been rendered
 $(document).ready (function () {
-  
 
-//Populates <p> element with id #current day with todays date in desired format.
-$('#currentDay').text(today.format('dddd, MMMM Do'));
+  //Add click event listener to 'save' button.
+  $(".btn.saveBtn").click(function() {
+    //Assign variable 'thisHour' a value based on parent div #id;
+    var thisHour = ($(this).parent().attr('id'));
+    
+    console.log(thisHour)
 
+  });
+
+  //Populates <p> element with id #current day with todays date in desired format.
+  $('#currentDay').text(today.format('dddd, MMMM Do'));
 
 
 });
