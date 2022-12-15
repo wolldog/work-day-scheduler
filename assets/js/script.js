@@ -17,6 +17,8 @@ $(document).ready (function () {
     console.log(thisHour)
     console.log(diaryEntry)
 
+    //Store key:'thisHour' value: 'diaryEntry' in localstorage
+    localStorage.setItem(thisHour, diaryEntry) 
   });
 
   //Populates <p> element with id #current day with todays date in desired format.
