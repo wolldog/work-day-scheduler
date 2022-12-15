@@ -48,7 +48,7 @@ $(document).ready (function () {
   
 
   //Populates <p> element with id #current day with todays date in desired format.
-  $('#currentDay').text(today.format('dddd, MMMM D'));
+  $('#currentDay').text(today.format('dddd, MMMM Do'));
 
 
 });
