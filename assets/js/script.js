@@ -21,6 +21,23 @@ $(document).ready (function () {
     localStorage.setItem(thisHour, diaryEntry) 
   });
 
+  //for loop executed on page load that iterates over each time-block.
+  for (var i =0; i < hourDiv.length; i++) {
+    //Assigns variable 'hourID' the value of it's parent div's id (hour-#)
+        var hourId = $(hourDiv[i]).attr('id')
+    //Compares the value of 'timeNow' to the number in 'hourID' and adds a class of 
+    //'past', 'present or 'future' to the parent div.
+        if (timeNow == hourId.slice(5)) {
+          $(hourDiv[i]).addClass('present');
+        }
+        else if (timeNow > hourId.slice(5)) {
+          $(hourDiv[i]).addClass('past');
+        }
+        else {
+          $(hourDiv[i]).addClass('future');
+        }
+  }
+
   //Populates <p> element with id #current day with todays date in desired format.
   $('#currentDay').text(today.format('dddd, MMMM Do'));
 
